@@ -1,0 +1,21 @@
+server
+   port: 8270
+spring:
+   application:
+        name: DEPARTMENT-SERVICE
+   datasource:
+     url: jdbc:sqlserver://localhost:1433;encrypt=true;trustServerCertificate=true;databaseName=minsadb
+     username:
+     password:
+     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+   jpa:
+     hibernate:
+        ddl-auto: update
+     show-sql: false
+     properties:
+        hibernate:
+          format_sql=true
+     properties:
+        hibernate:
+          dialect=org.hibernate.dialect.SQLServerDialect
+
